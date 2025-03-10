@@ -1,0 +1,94 @@
+---
+title: "Posibles proyectos MCDI"
+author:
+    name: "Eric S. Téllez"
+    email: eric.tellez@infotec.edu.mx
+    affiliation:
+        name: INFOTEC sede Aguascalientes, Ags.
+
+lang: es-MX
+format:
+    revealjs:
+        theme: blood
+
+---
+
+- Búsqueda por similitud
+- Procesamiento de lenguaje natural
+
+# Búsqueda por similitud
+
+## Problemas
+
+- Indexamiento y búsqueda para $k$ vecinos cercanos.
+- Determinación de los pares más cercanos y los $k$ centros más alejados.
+- Construcción de grafos de $k$ vecinos.
+
+## Indexamiento
+
+Dado un **espacio métrico** $(U, d)$, la idea es **preprocesar** un $X \subset U$ para resolver consultas $(q, r)$ de manera eficiente.
+
+- $d(u, v)$ es una métrica definida sobre cualquier par $(u, v) \in U \times U$.
+- La base de datos es finita $X=x_1, x_2, \cdots, x_n$.
+- $q \in U$ y comúnmente $q \not\in X$.
+  - $(q, r)$ se le llama _búsqueda por rango_, pero si $r$ es conocido para un número de elementos deseados se puede transformar en una búsqueda de _$k$ vecinos cercanos_ (knn).
+
+--- 
+
+El **preprocesamiento** tiene como objetivo obtener relaciones en el espacio métrico para permitir resolver consultas de manera eficiente.
+
+<!--
+Algunas técnicas:
+
+- Pivotes y particiones compactas.
+- Locality sensitive hashing.
+- Product quantization.
+- Grafos de búsqueda.
+-->
+
+La búsqueda por similitud es un problema **fundamental** en ciencias de la computación, pero es importante remarcar que las aplicaciones con los nuevos **modelos de aprendizaje profundo** se estan consolidando aún más.
+
+---
+
+### Aplicaciones
+- **Recuperación densa (dense retrieval)**: Búsqueda de documentos a partir de consultas que no necesariamente se parecen léxicamente pero si semánticamente.
+- **Búsqueda multimodal**: Búsqueda de video o imágenes por medio de texto usando descripciones del contenido.
+
+---
+
+- **Generación aumentada por recuperación**: Conocida como _Retrieval Augmented Generation_ o (RAG), la idea es reducir alucionaciones de LLM generativos a partir de recuperación factual; también funciona para que los LLM tengan conocimiento fuera de su entrenamiento.
+- **Acelerador de algoritmos** de agrupamiento y visualización.
+
+## Proyecciones a baja dimensión
+- Los objetos en un espacio métrico suelen ser **vectores de gran complejidad**, de cientos o hasta miles de componentes.
+- Las funciones de distancia podrían llegar a ser **muy costosas** trabajando en la dimensión explícita.
+- La **memoria** también implica usar grandes recursos para bases de datos grandes.
+
+--- 
+
+- En lugar de vectores, los **objetos** podrían ser más caprichosos.
+- **Algunas** funciones de distancia pueden ser especialmente costosas.
+
+--- 
+
+### Problemas
+
+- Sketches binarios.
+- Cuantización basada en grafos: $k$nn, HSP.
+
+## Búsqueda sin indexamiento
+Entre las aplicaciones posibles, no siempre se necesita un índice (preprocesamiento)
+
+- Archivado de datos.
+- Análisis de datos históricos.
+- Bases de datos que raramente son actualizadas.
+- Agrupamiento.
+- Visualización.
+
+# Procesamiento de lenguaje natural
+
+## Clasificación de texto
+
+## Clustering y tópicos
+
+## Búsqueda
