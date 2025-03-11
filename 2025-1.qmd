@@ -1,5 +1,5 @@
 ---
-title: "Posibles proyectos MCDI"
+title: "Proyectos MCDI 2025-1"
 author:
     name: "Eric S. Téllez"
     email: eric.tellez@infotec.edu.mx
@@ -9,12 +9,9 @@ author:
 lang: es-MX
 format:
     revealjs:
-        theme: blood
+        theme: solarized
 
 ---
-
-- Búsqueda por similitud
-- Procesamiento de lenguaje natural
 
 # Búsqueda por similitud
 
@@ -73,8 +70,10 @@ La búsqueda por similitud es un problema **fundamental** en ciencias de la comp
 
 ### Problemas
 
-- Sketches binarios.
-- Cuantización basada en grafos: $k$nn, HSP.
+- Sketches binarios sobre la distancia de Hamming.
+- Cuantización basada en:
+  - grafo $k$nn.
+  - grafo HSP.
 
 ## Búsqueda sin indexamiento
 Entre las aplicaciones posibles, no siempre se necesita un índice (preprocesamiento)
@@ -87,8 +86,95 @@ Entre las aplicaciones posibles, no siempre se necesita un índice (preprocesami
 
 # Procesamiento de lenguaje natural
 
-## Clasificación de texto
+## Recuersos regionalizados
+Medición de similitud entre variaciones del lenguaje en la red social Twitter, así como la generación de recursos **regionalizados**, se espera sean de utilidad para tareas donde la **región** sea importante.
+
+---
+
+### Mas información
+- Sitio web: [https://ingeotec.github.io/regional-spanish-models/](https://ingeotec.github.io/regional-spanish-models/)
+- Repositorio: [https://github.com/INGEOTEC/regional-spanish-models](https://github.com/INGEOTEC/regional-spanish-models)
+- Regionalized models for Spanish language variations based on Twitter: [ArXiv](https://arxiv.org/abs/2110.06128).
+
+---
+
+### Problemas
+Entender el lenguaje y los mensajes escritos en redes sociales.
+
+
+- **Minería de opinión** (análisis de sentimiento)
+  - <span style="color: rgb(0, 0, 255);">positivo :) </span>
+  - <span style="color: rgb(130, 130, 130);">neutro :) </span>
+  - <span style="color: rgb(255, 0, 0);">negativo :( </span>
+
+---
+
+- **Análisis de tópicos**
+- **Carga emotiva de un mensaje**: _enojo, anticipación, disgusto, miedo, gozo, tristeza, sorpresa, confianza_.
+- **Identificación de humor**
+- **Identificación de lenguaje de odio**
+- Etc.
+
+<!--
+
+### Problema 2
+Perfilado de usuarios por medio de sus mensajes escritos
+
+@@definition
+- **Predicción indicadores socio-demográficos de los usuarios**: edad, sexo, lugar de procedencia, ocupación, ...
+- **Identificación de autoría**: ¿quiénes escriben?, ¿cómo escriben?, ¿sobre qué escriben?
+- **Entender como se comportan usuarios**, ¿qué desean?, ¿por qué?
+- **Medición de violencia en redes sociales**: discurso de odio, xenofobia, racismo, misoginia, agresividad, cyberbulling...
+- **Identificación de posibles trastornos mentales**: ansiedad, depresión, adicciones, ...
+- Aplicaciones a seguridad, salud, políticas públicas, economía y finanzas, ...
+@@
+
+
+### España
+@@example-red
+- me dais ascooooikiiikioooooooooooooooooooooooooo
+- kina ñefla
+- ns cmo s exribe
+- o indeciso, nse ya x dnde cogerte colega
+- q os follennjajabya quisieran
+- en el metro q voy esta potando uno
+- _USR 😂😭💔☹️😰 pero por qué churra
+@@
+
+### Argentina
+@@example-cyan
+- pofr suerxte m8ís amigo mo son psicópatassa
+- pal pinnngooo
+- _USR estos rompen todo! y la esposa del chorro me tiró en la cara q era planera, 5 hijos tiene. me grita: vos seguí alquilando! decí q no la agarro de los pelos x mi hijo q no le gusta el bardo.
+- y dsp se comió un asado, moooy booeno👌👌🤣😂
+- mi hno se pone re denso no lo banco
+@@
+
+### México
+@@example-green
+- _USR ahora si! #achingarasumadre nefasto, corrupto y ratero, por mucho eres el peor alcalde que ha tenido _USR 
+- ya me ando echando la primera ca** del año
+- _USR acá ya andaban con "la chica que soñé"
+- _USR ¿no se te olvidó ponerte calzones rojos hoy, verdad?
+- un minuto de silencio por los que se estan reventando los dedos y las manos con los cohetes !!!
+@@
+
+## Slide Title {background-color="black" background-image="https://placekitten.com/100/100" background-size="100px" background-repeat="repeat"}
+![map](https://raw.githubusercontent.com/INGEOTEC/regional-spanish-models/main/figs/fig-colormap-lexical-4.png)
+
+-->
 
 ## Clustering y tópicos
 
+- Clustering de documentos utilizando sentence BERT o BoW.
+- Identificación de tópicos, e.g., LDA, BERT Topic.
+
 ## Búsqueda
+
+- Búsqueda de texto completo con modelo léxico:
+  - TFIDF
+  - BM25
+
+- Búsqueda densa:
+  - Sentence BERT
+  - ColBERT
