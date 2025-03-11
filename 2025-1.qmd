@@ -86,50 +86,48 @@ Entre las aplicaciones posibles, no siempre se necesita un índice (preprocesami
 
 # Procesamiento de lenguaje natural
 
-## Recuersos regionalizados
-Medición de similitud entre variaciones del lenguaje en la red social Twitter, así como la generación de recursos **regionalizados**, se espera sean de utilidad para tareas donde la **región** sea importante.
+## Recursos regionalizados para el Español
+
 
 ---
 
-### Mas información
-- Sitio web: [https://ingeotec.github.io/regional-spanish-models/](https://ingeotec.github.io/regional-spanish-models/)
-- Repositorio: [https://github.com/INGEOTEC/regional-spanish-models](https://github.com/INGEOTEC/regional-spanish-models)
-- Regionalized models for Spanish language variations based on Twitter: [ArXiv](https://arxiv.org/abs/2110.06128).
+### Español
+![Similitud léxica entre regiones](figs/lex+lat.jpg)
 
 ---
 
-### Problemas
+### México
+![Similitud semática entre regiones de México](figs/llm+mexico.png)
+
+---
+
+## Problemas
 Entender el lenguaje y los mensajes escritos en redes sociales.
 
+- **Minería de opinión** (análisis de sentimiento): determinar sí algo es 
+  <span style="color: rgb(0, 0, 255);">positivo :)</span>, &nbsp; <span style="color: rgb(130, 130, 130);">neutro :)</span>, o &nbsp; <span style="color: rgb(255, 0, 0);">negativo :( </span>
 
-- **Minería de opinión** (análisis de sentimiento)
-  - <span style="color: rgb(0, 0, 255);">positivo :) </span>
-  - <span style="color: rgb(130, 130, 130);">neutro :) </span>
-  - <span style="color: rgb(255, 0, 0);">negativo :( </span>
+- **Análisis de tópicos**: ¿Qué temas hay en un corpus?
+- **Carga emotiva de un mensaje**: _enojo, anticipación, disgusto, miedo, gozo, tristeza, sorpresa, confianza_.
+
+- Identificación de **humor**, **odio**, o **esperanza**, ...y un largo etcétera.
 
 ---
 
-- **Análisis de tópicos**
-- **Carga emotiva de un mensaje**: _enojo, anticipación, disgusto, miedo, gozo, tristeza, sorpresa, confianza_.
-- **Identificación de humor**
-- **Identificación de lenguaje de odio**
-- Etc.
+## Perfilado
 
-<!--
-
-### Problema 2
-Perfilado de usuarios por medio de sus mensajes escritos
-
-@@definition
 - **Predicción indicadores socio-demográficos de los usuarios**: edad, sexo, lugar de procedencia, ocupación, ...
 - **Identificación de autoría**: ¿quiénes escriben?, ¿cómo escriben?, ¿sobre qué escriben?
 - **Entender como se comportan usuarios**, ¿qué desean?, ¿por qué?
+
+---
+
 - **Medición de violencia en redes sociales**: discurso de odio, xenofobia, racismo, misoginia, agresividad, cyberbulling...
 - **Identificación de posibles trastornos mentales**: ansiedad, depresión, adicciones, ...
-- Aplicaciones a seguridad, salud, políticas públicas, economía y finanzas, ...
-@@
 
 
+
+<!--
 ### España
 @@example-red
 - me dais ascooooikiiikioooooooooooooooooooooooooo
@@ -159,10 +157,10 @@ Perfilado de usuarios por medio de sus mensajes escritos
 - un minuto de silencio por los que se estan reventando los dedos y las manos con los cohetes !!!
 @@
 
-## Slide Title {background-color="black" background-image="https://placekitten.com/100/100" background-size="100px" background-repeat="repeat"}
-![map](https://raw.githubusercontent.com/INGEOTEC/regional-spanish-models/main/figs/fig-colormap-lexical-4.png)
+
 
 -->
+
 
 ## Clustering y tópicos
 
