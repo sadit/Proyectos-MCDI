@@ -57,16 +57,17 @@ La búsqueda por similitud es un problema **fundamental** en ciencias de la comp
 - **Acelerador de algoritmos** de agrupamiento y visualización.
 
 ## Proyecciones a baja dimensión
-- Los objetos en un espacio métrico suelen ser **vectores de gran complejidad**, de cientos o hasta miles de componentes.
-- Las funciones de distancia podrían llegar a ser **muy costosas** trabajando en la dimensión explícita.
-- La **memoria** también implica usar grandes recursos para bases de datos grandes.
 
---- 
+![UMAP de primos](figs/umap-primes.png)
 
-- En lugar de vectores, los **objetos** podrían ser más caprichosos.
-- **Algunas** funciones de distancia pueden ser especialmente costosas.
+---  
 
---- 
+<img alt="UMAP noticias twitter" src="figs/umap+u06-0.png" width="50%" /><img alt="Clusters limpios" src="figs/umap+u06-1.png" width="50%" />
+
+
+[Ejemplo Clustering/tópicos -- Unidad 6 Recuperación de Información](https://github.com/sadit/IR-2024/blob/main/Unidades/u06.ipynb)
+
+---
 
 ### Problemas
 
@@ -101,7 +102,7 @@ Entre las aplicaciones posibles, no siempre se necesita un índice (preprocesami
 
 ---
 
-## Problemas
+## Problemas de clasificación
 Entender el lenguaje y los mensajes escritos en redes sociales.
 
 - **Minería de opinión** (análisis de sentimiento): determinar sí algo es 
@@ -116,15 +117,11 @@ Entender el lenguaje y los mensajes escritos en redes sociales.
 
 ## Perfilado
 
-- **Predicción indicadores socio-demográficos de los usuarios**: edad, sexo, lugar de procedencia, ocupación, ...
-- **Identificación de autoría**: ¿quiénes escriben?, ¿cómo escriben?, ¿sobre qué escriben?
-- **Entender como se comportan usuarios**, ¿qué desean?, ¿por qué?
-
----
-
-- **Medición de violencia en redes sociales**: discurso de odio, xenofobia, racismo, misoginia, agresividad, cyberbulling...
-- **Identificación de posibles trastornos mentales**: ansiedad, depresión, adicciones, ...
-
+- Predicción indicadores socio-demográficos de los usuarios.
+- Identificación de autoría.
+- Entender como se comportan usuarios.
+- Medición de violencia en redes sociales.
+- Identificación de posibles trastornos mentales.
 
 
 <!--
