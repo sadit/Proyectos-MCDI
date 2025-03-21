@@ -16,35 +16,19 @@ format:
 
 # Búsqueda por similitud
 
-## Problemas
+## Problema
+
+![Base de datos y consulta](figs/query.png)
+
+---
+
+![Preprocesamiento](figs/delone.png)
+
+---
 
 - Indexamiento y búsqueda para $k$ vecinos cercanos.
 - Determinación de los pares más cercanos y los $k$ centros más alejados.
 - Construcción de grafos de $k$ vecinos.
-
-## Indexamiento
-
-Dado un **espacio métrico** $(U, d)$, la idea es **preprocesar** un $X \subset U$ para resolver consultas $(q, r)$ de manera eficiente.
-
-- $d(u, v)$ es una métrica definida sobre cualquier par $(u, v) \in U \times U$.
-- La base de datos es finita $X=x_1, x_2, \cdots, x_n$.
-- $q \in U$ y comúnmente $q \not\in X$.
-  - $(q, r)$ se le llama _búsqueda por rango_, pero si $r$ es conocido para un número de elementos deseados se puede transformar en una búsqueda de _$k$ vecinos cercanos_ (knn).
-
---- 
-
-El **preprocesamiento** tiene como objetivo obtener relaciones en el espacio métrico para permitir resolver consultas de manera eficiente.
-
-<!--
-Algunas técnicas:
-
-- Pivotes y particiones compactas.
-- Locality sensitive hashing.
-- Product quantization.
-- Grafos de búsqueda.
--->
-
-La búsqueda por similitud es un problema **fundamental** en ciencias de la computación, pero es importante remarcar que las aplicaciones con los nuevos **modelos de aprendizaje profundo** se estan consolidando aún más.
 
 ---
 
@@ -124,6 +108,12 @@ Entender el lenguaje y los mensajes escritos en redes sociales.
 - Medición de violencia en redes sociales.
 - Identificación de posibles trastornos mentales.
 
+## Competencias PLN
+
+- IberLEF
+- PAN 
+- FIRE
+- SemEval
 
 <!--
 ### España
@@ -174,3 +164,15 @@ Entender el lenguaje y los mensajes escritos en redes sociales.
 - Búsqueda densa:
   - Sentence BERT
   - ColBERT
+
+## Gracias
+
+
+<div>
+<div> Dr. Eric S. Téllez</div>
+<div> Investigador SECIHTI-INFOTEC</div>
+<div> <eric.tellez@infotec.edu.mx></div>
+
+</div>
+
+Aguascalientes, Aguascalientes
